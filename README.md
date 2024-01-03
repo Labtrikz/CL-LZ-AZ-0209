@@ -1,4 +1,4 @@
-## Go Deploy Demo
+## Labtrikz Demo
 This repository contains code for a basic HTML and CSS page with a dynamic night mode toggle functionality. The page displays a centered image and a title in a dark mode theme. The color scheme and the image change when the night mode toggle is switched.
 
 ### Getting Started
