@@ -1,0 +1,82 @@
+body {
+  background-color: #E9ECEF;
+  color: #14233C;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+h2 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+.logo {
+  width: 20vw;
+
+  fill: #14233C;
+  transition: fill 0.4s;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #14233C;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #E9ECEF;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: #bdc0c1;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+body.night-mode {
+  background-color: #14233C;
+  color: #E9ECEF;
+}
+
+body.night-mode .logo {
+  fill: #E9ECEF;
+}
